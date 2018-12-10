@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Colloquium</string>
+    <string name="employee_login_button_title">Соискатель</string>
+    <string name="hr_login_button_title">Сотрудник компании</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="R.string.login_activity_title">Назад</string>
+    <string name="employee_login_screen_description">Страница авторизации соискателя</string>
 </resources>
