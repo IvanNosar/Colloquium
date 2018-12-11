@@ -9,6 +9,7 @@
 
     <string name="login_activity_title">Назад</string>
     <string name="register_activity_title">Назад</string>
+    <string name="main_screen_activity_title">На стартовую страницу</string>
     <string name="employee_login_screen_description">Страница авторизации соискателя</string>
     <string name="hr_login_screen_description">Страница авторизации сотрудника компании</string>
     <string name="email_hint">Email</string>
@@ -21,4 +22,6 @@
     <string name="password_confirm_hint">Повторите пароль</string>
     <string name="organization_name_hint">Название организации</string>
     <string name="city_hint">Город</string>
+    <string name="vacancy_hint">Вакансия</string>
+    <string name="search_title">Поиск</string>
 </resources>

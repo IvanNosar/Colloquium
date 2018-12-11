@@ -1,15 +1,15 @@
-package group41.student.com.colloquium.view.Employee;
+package group41.student.com.colloquium.view.Hr;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
 
-public class EmployeeMainScreenActivity extends AppCompatActivity {
+public class MainScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_main_screen);
+        setContentView(R.layout.activity_hr_main_screen);
     }
 }

@@ -43,7 +43,7 @@
                 android:id="@+id/register_city"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName|textCapWords"
+                android:inputType="textCapWords"
                 android:hint="@string/city_hint"
                 tools:ignore="Autofill"/>
         </com.google.android.material.textfield.TextInputLayout>

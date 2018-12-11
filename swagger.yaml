@@ -1,0 +1,153 @@
+swagger: '2.0'
+info:
+  description: Документация для Colloquium API
+  version: 1.0.0
+  title: Colloquium API
+
+# tags are used for organizing operations
+tags:
+- name: hr
+  description: Функции, доступные менеджеру по персоналу компании
+- name: employee
+  description: Функции, доступные соискателю
+
+paths:
+  /login/hr:
+    post:
+      tags:
+      - hr
+      summary: Производит авторизацию пользователя, как HR компании
+      produces: 
+      - application/json
+      parameters: 
+      - in: body
+        name: loginBody
+        schema: 
+          $ref: '#/definitions/LoginRequest'
+        required: true
+      responses:
+        200:
+          description: Ответ с токеном авторизации
+          schema:
+            $ref: '#/definitions/LoginResponse'
+        400:
+          description: Неверный ввод
+  
+  /login/employee:
+    post:
+      tags:
+      - employee
+      summary: Производит авторизацию пользователя, как соискателя
+      produces: 
+      - application/json
+      parameters: 
+      - in: body
+        name: loginBody
+        schema: 
+          $ref: '#/definitions/LoginRequest'
+        required: true
+      responses:
+        200:
+          description: Ответ с токеном авторизации
+          schema:
+            $ref: '#/definitions/LoginResponse'
+        400:
+          description: Неверный ввод
+          
+  /ads/employee:
+    get:
+      tags:
+      - employee
+      summary: Получает список объявлений, соответствующий заданным фильтрам
+      produces:
+      - application/json
+      parameters: 
+      - in: query
+        name: token
+        description: Токен авторизации пользователя
+        type: string
+        required: true
+        
+      - in: query
+        name: count
+        description: Количество результатов в ответе. Значение `0` будет заменено на значение по умолчанию
+        type: integer
+        default: 30
+        
+      - in: query
+        name: offset
+        description: Сдвиг от начала в коллекции ответов. Используется для постраничного просмотра
+        type: integer
+        default: 0
+        
+      - in: query
+        name: city
+        description: Фильтр с именем города для поиска
+        type: string
+        
+      - in: query
+        name: company
+        description: Фильтр с именем компании для поиска
+        type: string
+        
+      - in: query
+        name: vacancy
+        description: Фильтр с наименованием вакансии для поиска
+        type: string
+        
+      responses:
+        200:
+          description: Список объявлений, соответствующий заданным фильтрам
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/EmployeeAdsResponse"
+        400:
+          description: Неверный ввод
+        401:
+          description: Не указан токен авторизации
+
+definitions:
+  LoginRequest:
+    type: object
+    properties:
+      email:
+        type: string
+        example: example@mail.com
+      password:
+        type: string
+        example: password
+    required: 
+    - email
+    - password
+  
+  LoginResponse:
+    type: object
+    properties:
+      token:
+        type: string
+  
+  EmployeeAdsResponse:
+    type: object
+    properties:
+      id:
+        type: integer
+      vacancy:
+        type: string
+      city:
+        type: string
+      company:
+        type: string
+      date:
+        type: string
+      department:
+        type: string 
+      employment_rate:
+        type: string
+      requirements:
+        type: integer
+      tests:
+        type: integer
+      advices:
+        type: integer
+      

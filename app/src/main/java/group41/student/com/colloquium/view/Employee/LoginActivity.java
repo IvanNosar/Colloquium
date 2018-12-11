@@ -1,4 +1,4 @@
-package group41.student.com.colloquium.view.Hr;
+package group41.student.com.colloquium.view.Employee;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,15 +7,13 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
-import group41.student.com.colloquium.view.Employee.EmployeeMainScreenActivity;
-import group41.student.com.colloquium.view.Employee.EmployeeRegisterActivity;
 
-public class HrLoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hr_login);
+        setContentView(R.layout.activity_employee_login);
 
         setupTitle();
     }
@@ -42,7 +40,7 @@ public class HrLoginActivity extends AppCompatActivity {
 
     public void login(View view) {
 
-        Intent intent = new Intent(this, HrMainScreenActivity.class);
+        Intent intent = new Intent(this, MainScreenActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
         startActivity(intent);
@@ -51,6 +49,6 @@ public class HrLoginActivity extends AppCompatActivity {
 
     public void register(View view) {
 
-        startActivity(new Intent(this, HrRegisterActivity.class));
+        startActivity(new Intent(this, RegisterActivity.class));
     }
 }

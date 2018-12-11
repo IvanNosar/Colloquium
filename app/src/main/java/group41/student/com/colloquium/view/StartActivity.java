@@ -6,8 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
-import group41.student.com.colloquium.view.Employee.EmployeeLoginActivity;
-import group41.student.com.colloquium.view.Hr.HrLoginActivity;
+import group41.student.com.colloquium.view.Employee.LoginActivity;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -19,11 +18,11 @@ public class StartActivity extends AppCompatActivity {
 
     public void loginEmployee(View view) {
 
-        startActivity(new Intent(this, EmployeeLoginActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
     }
 
     public void loginHr(View view) {
 
-        startActivity(new Intent(this, HrLoginActivity.class));
+        startActivity(new Intent(this, group41.student.com.colloquium.view.Hr.LoginActivity.class));
     }
 }

@@ -1,4 +1,4 @@
-package group41.student.com.colloquium.view.Employee;
+package group41.student.com.colloquium.view.Hr;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +8,12 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
 
-public class EmployeeLoginActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_login);
+        setContentView(R.layout.activity_hr_register);
 
         setupTitle();
     }
@@ -24,7 +24,7 @@ public class EmployeeLoginActivity extends AppCompatActivity {
 
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        setTitle(getString(R.string.login_activity_title));
+        setTitle(getString(R.string.register_activity_title));
     }
 
     @Override
@@ -38,17 +38,12 @@ public class EmployeeLoginActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void login(View view) {
+    public void register(View view) {
 
-        Intent intent = new Intent(this, EmployeeMainScreenActivity.class);
+        Intent intent = new Intent(this, MainScreenActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
         startActivity(intent);
         finish();
-    }
-
-    public void register(View view) {
-
-        startActivity(new Intent(this, EmployeeRegisterActivity.class));
     }
 }
