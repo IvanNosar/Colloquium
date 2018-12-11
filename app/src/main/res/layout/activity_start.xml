@@ -22,7 +22,7 @@
             android:background="?attr/selectableItemBackground"
             android:contentDescription="@string/employee_login_button_title"
             android:onClick="loginEmployee"
-            android:src="@drawable/employee"
+            android:src="@drawable/employee_logo"
             android:scaleType="fitCenter" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:background="?attr/selectableItemBackground"
-            android:src="@drawable/hr"
+            android:src="@drawable/hr_logo"
             android:contentDescription="@string/hr_login_button_title"
             android:onClick="loginHr"
             android:scaleType="fitCenter"/>

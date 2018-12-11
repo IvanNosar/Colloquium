@@ -1,9 +1,11 @@
-package group41.student.com.colloquium.view;
+package group41.student.com.colloquium.view.Employee;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
 
 public class EmployeeLoginActivity extends AppCompatActivity {
@@ -17,12 +19,12 @@ public class EmployeeLoginActivity extends AppCompatActivity {
     }
 
     private void setupTitle() {
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
 
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        setTitle(getString(R.string.R_string_login_activity_title));
+        setTitle(getString(R.string.login_activity_title));
     }
 
     @Override
@@ -34,5 +36,19 @@ public class EmployeeLoginActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void login(View view) {
+
+        Intent intent = new Intent(this, EmployeeMainScreenActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        startActivity(intent);
+        finish();
+    }
+
+    public void register(View view) {
+
+        startActivity(new Intent(this, EmployeeRegisterActivity.class));
     }
 }

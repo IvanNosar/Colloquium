@@ -7,7 +7,18 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="R.string.login_activity_title">Назад</string>
+    <string name="login_activity_title">Назад</string>
+    <string name="register_activity_title">Назад</string>
     <string name="employee_login_screen_description">Страница авторизации соискателя</string>
+    <string name="hr_login_screen_description">Страница авторизации сотрудника компании</string>
+    <string name="email_hint">Email</string>
+    <string name="login_title">Войти</string>
+    <string name="register_title">Регистрация</string>
+    <string name="not_registered_title">Еще не зарегестрированы?</string>
+    <string name="name_hint">Имя</string>
+    <string name="family_hint">Фамилия</string>
+    <string name="password_hint">Пароль</string>
+    <string name="password_confirm_hint">Повторите пароль</string>
+    <string name="organization_name_hint">Название организации</string>
+    <string name="city_hint">Город</string>
 </resources>

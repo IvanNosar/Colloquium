@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="group41.student.com.colloquium">
 
     <application
@@ -8,7 +9,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
             android:name=".view.StartActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -18,10 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.EmployeeLoginActivity"/>
-        <activity
-            android:name=".view.HrLoginActivity"/>
+        <activity android:name=".view.Employee.EmployeeLoginActivity" />
+        <activity android:name=".view.Hr.HrLoginActivity" />
+        <activity android:name=".view.Employee.EmployeeRegisterActivity" />
+        <activity android:name=".view.Employee.EmployeeMainScreenActivity" />
+        <activity android:name=".view.Hr.HrRegisterActivity"/>
+        <activity android:name=".view.Hr.HrMainScreenActivity"/>
     </application>
 
 </manifest>
