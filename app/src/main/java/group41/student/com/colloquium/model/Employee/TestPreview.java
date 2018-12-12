@@ -1,4 +1,6 @@
-package group41.student.com.colloquium.model;
+package group41.student.com.colloquium.model.Employee;
+
+import group41.student.com.colloquium.model.TestStatus;
 
 public class TestPreview {
 

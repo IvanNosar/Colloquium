@@ -11,9 +11,9 @@ import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 import group41.student.com.colloquium.R;
-import group41.student.com.colloquium.controller.network.VacancyPreviewsLoader;
-import group41.student.com.colloquium.controller.ui.VacancyPreviewAdapter;
-import group41.student.com.colloquium.model.VacancyPreview;
+import group41.student.com.colloquium.controller.network.Employee.VacancyPreviewsLoader;
+import group41.student.com.colloquium.controller.ui.Employee.VacancyPreviewAdapter;
+import group41.student.com.colloquium.model.Employee.VacancyPreview;
 import group41.student.com.colloquium.view.StartActivity;
 
 public class MainScreenActivity extends AppCompatActivity {

@@ -1,9 +1,9 @@
-package group41.student.com.colloquium.controller.network;
+package group41.student.com.colloquium.controller.network.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import group41.student.com.colloquium.model.VacancyPreview;
+import group41.student.com.colloquium.model.Employee.VacancyPreview;
 
 public class VacancyPreviewsLoader {
 

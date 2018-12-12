@@ -2,6 +2,8 @@ package group41.student.com.colloquium.model;
 
 import java.util.List;
 
+import group41.student.com.colloquium.model.Employee.TestPreview;
+
 public class Vacancy {
 
     private long mId;

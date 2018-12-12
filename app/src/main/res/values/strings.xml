@@ -35,4 +35,8 @@
     <string name="test_code">public static void main(String[] args) {\n\tInteger x = 9;\n\tx += x++ + ++x;\n\treturn;\n}</string>
     <string name="check_test_task_title">Проверить</string>
     <string name="next_test_task_title">Следующее задание</string>
+    <string name="add_vacancy_hint">Добавить вакансию</string>
+    <string name="search_vacancies_hint">Поиск вакансий по названию</string>
+    <string name="save_vacancy_hint">Сохранить вакансию</string>
+    <string name="save_test_task_title">Сохранить</string>
 </resources>

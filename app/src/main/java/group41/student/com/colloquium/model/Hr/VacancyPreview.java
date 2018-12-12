@@ -1,11 +1,9 @@
-package group41.student.com.colloquium.model;
+package group41.student.com.colloquium.model.Hr;
 
 public class VacancyPreview {
 
     private long mId;
     private String mVacancy;
-    private String mCity;
-    private String mCompany;
     private String mDate;
     private String mDepartment;
     private String mEmploymentRate;
@@ -16,8 +14,6 @@ public class VacancyPreview {
     public VacancyPreview(
             long id,
             String vacancy,
-            String city,
-            String company,
             String date,
             String department,
             String employmentRate,
@@ -27,8 +23,6 @@ public class VacancyPreview {
         
         mId = id;
         mVacancy = vacancy;
-        mCity = city;
-        mCompany = company;
         mDate = date;
         mDepartment = department;
         mEmploymentRate = employmentRate;
@@ -51,22 +45,6 @@ public class VacancyPreview {
 
     public void setVacancy(String vacancy) {
         mVacancy = vacancy;
-    }
-
-    public String getCity() {
-        return mCity;
-    }
-
-    public void setCity(String city) {
-        mCity = city;
-    }
-
-    public String getCompany() {
-        return mCompany;
-    }
-
-    public void setCompany(String company) {
-        mCompany = company;
     }
 
     public String getDate() {

@@ -1,4 +1,4 @@
-package group41.student.com.colloquium.view.Employee;
+package group41.student.com.colloquium.view.Hr;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,7 +12,7 @@ public class TestTaskActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_test_task);
+        setContentView(R.layout.activity_hr_test_task);
 
         setupTitle();
     }
@@ -37,13 +37,7 @@ public class TestTaskActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void checkAnswer(View view) {
-
-        findViewById(R.id.answer_conclusion).setVisibility(View.VISIBLE);
-        findViewById(R.id.next_test_task_button).setVisibility(View.VISIBLE);
-    }
-
-    public void nextTestTask(View view) {
+    public void saveTest(View view) {
 
         finish();
     }

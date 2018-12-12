@@ -1,4 +1,4 @@
-package group41.student.com.colloquium.controller.ui;
+package group41.student.com.colloquium.controller.ui.Hr;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Locale;
 
 import group41.student.com.colloquium.R;
-import group41.student.com.colloquium.model.VacancyPreview;
+import group41.student.com.colloquium.model.Hr.VacancyPreview;
 
 public class VacancyPreviewAdapter {
 
@@ -52,13 +52,10 @@ public class VacancyPreviewAdapter {
 
     private View generateView(final VacancyPreview data, final VacancyPreviewClickHandler handler) {
 
-        View result = mLayoutInflater.inflate(R.layout.view_vacancy_preview, mContainer, false);
+        View result = mLayoutInflater.inflate(R.layout.view_hr_vacancy_preview, mContainer, false);
 
         ((TextView)result.findViewById(R.id.vacancy_name)).setText(data.getVacancy());
-        ((TextView)result.findViewById(R.id.company_and_city)).
-                setText(String.format(COMPANY_AND_CITY_PATTERN, data.getCompany(), data.getCity()));
         ((TextView)result.findViewById(R.id.date)).setText(data.getDate());
-
         ((TextView)result.findViewById(R.id.department)).
                 setText(String.format(DEPARTMENT_PATTERN, data.getDepartment()));
         ((TextView)result.findViewById(R.id.employment_rate)).
