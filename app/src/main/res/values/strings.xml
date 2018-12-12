@@ -24,4 +24,15 @@
     <string name="city_hint">Город</string>
     <string name="vacancy_hint">Вакансия</string>
     <string name="search_title">Поиск</string>
+    <string name="detailed_vacancy_activity_title">Назад</string>
+    <string name="telephone_contact_list_item_label">• Телефон:</string>
+    <string name="email_contact_list_item_label">• Email:</string>
+    <string name="address_contact_list_item_label">• Адрес:</string>
+    <string name="description">Должностные обязанности заключаются в следующем: \n\t•Создание мобильных приложений \n\t•Использование Git \n\t•Применение JIRA</string>
+    <string name="requirements">\t•Уверенное знание языка Java\n\t•Опыт использования Gradle\n\t•Знание Docker, CI, Espresso</string>
+    <string name="advices">\t•Нам нравятся креативные люди. Попробуйте нас удивить\n\t•Умение работать в команде будет плюсом\n\t•Подготовьтсь к провакационным вопросам. Нам важно увидеть вашу реакцию на стрессовые ситуации</string>
+    <string name="test_task_activity_title">Назад</string>
+    <string name="test_code">public static void main(String[] args) {\n\tInteger x = 9;\n\tx += x++ + ++x;\n\treturn;\n}</string>
+    <string name="check_test_task_title">Проверить</string>
+    <string name="next_test_task_title">Следующее задание</string>
 </resources>

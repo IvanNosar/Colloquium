@@ -59,7 +59,7 @@ public class MainScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(VacancyPreview item) {
 
-                startActivity(new Intent(MainScreenActivity.this, DetailedVacantionActivity.class));
+                startActivity(new Intent(MainScreenActivity.this, DetailedVacancyActivity.class));
             }
         };
 

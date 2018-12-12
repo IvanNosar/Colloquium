@@ -26,7 +26,12 @@
         <activity android:name=".view.Employee.MainScreenActivity" />
         <activity android:name=".view.Hr.RegisterActivity" />
         <activity android:name=".view.Hr.MainScreenActivity" />
-        <activity android:name=".view.Employee.DetailedVacantionActivity"/>
+        <activity android:name=".view.Employee.DetailedVacancyActivity" />
+        <activity android:name=".view.Employee.TestTaskActivity"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
